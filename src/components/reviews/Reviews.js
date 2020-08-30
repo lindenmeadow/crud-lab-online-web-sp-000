@@ -13,7 +13,6 @@ class Reviews extends Component {
           deleteReview={this.props.deleteReview}
         />
       )
-
   }
 };
 
