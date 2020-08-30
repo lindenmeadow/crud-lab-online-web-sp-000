@@ -3,7 +3,7 @@ import Review from './Review';
 
 class Reviews extends Component {
   const specificReviews = this.props.reviews.filter(review => review.restaurantId === this.props.restaurantId)
-  
+
   const listedReviews = specificReviews.map(review =>{
       return (
         <Review
