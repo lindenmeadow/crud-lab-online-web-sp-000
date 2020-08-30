@@ -8,8 +8,7 @@ class Reviews extends Component {
         <Review
           key={review.id}
           review={review}
-          deleteReview={this.props.deleteReview}
-        />
+          deleteReview={this.props.deleteReview}/>
       )
     }
     )
