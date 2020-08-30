@@ -13,7 +13,7 @@ class Restaurants extends Component {
         />
       )
     });
-    
+
     return(
       <ul>
         Restaurants Component
