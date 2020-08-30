@@ -19,6 +19,7 @@ class Reviews extends Component {
     return (
       <ul>
         Reviews
+        {listedReviews}
       </ul>
     );
   }
