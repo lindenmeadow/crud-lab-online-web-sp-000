@@ -20,7 +20,7 @@ class RestaurantInput extends Component {
     event.preventDefault()
     this.props.addRestaurant(this.state.text)
   }
-  
+
   render() {
     return (
       <div>
