@@ -6,12 +6,12 @@ export default function manageRestaurants(state = {
     restaurants: [],
     reviews: [],
   }, action) {
-    //console.log(action)
+  
     switch (action.type) {
 
         case 'ADD_RESTAURANT':
             const newRestaurant = { text: action.payload, id: cuidFn() };
-            //console.log(newRestaurant)
+          
             return {
                 ...state,
                 restaurants:[...state.restaurants, newRestaurant]
@@ -26,7 +26,7 @@ export default function manageRestaurants(state = {
             }
 
             case 'ADD_REVIEW':
-                //why couldnt I call it payload
+              
                 const review = { text: action.review.text, restaurantId: action.review.restaurantId, id: cuidFn() };
                 return { ...state,
                     reviews: [...state.reviews, review]
